@@ -4,44 +4,43 @@ SSH
 
 connecting ssh
 ---
-
+```bash
 ssh ip
 enter user
 enter pass(if available)
 enter mfa(if available)
-
----------------------------
-
+```
+---
+```bash
 ssh user@ip
 enter pass(if)
 
 ssh user:pass@ip
+```
+---
 
----------------------------
-===========================
-using hosts  
-===========================
-'me clear that hosts and hostname are different in their own way, so if u dont know google it or man ssh
+##using hosts  
+---
+l'me clear that hosts and hostname are different in their own way, so if u dont know google it or man ssh
 
-edit /etc/hosts
+edit `/etc/hosts`
 
 many ways to edit it (make sure u dont overwrite it in either way)
 
 so here is the best practices for it
-------------------------------------------------
+---
+```bash
 echo "<ip> <host>" | sudo tee -a /etc/hosts
-------------------------------------------------
+```
 or
-------------------------------------------------
+```bash
 sudo echo "<ip> <host>" >> /etc/hosts
-------------------------------------------------
+```
 or
-------------------------------------------------
 use ur fav editor such as vi/vim, nano or mousepad  
-------------------------------------------------
 
 Now,,
--------------------------------------------------
+---
 ssh host   ---> it will take default use wont asks for user
 
 ssh user@host 
