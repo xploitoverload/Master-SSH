@@ -341,6 +341,7 @@ It was you.
 ---
 
 **— Kalpesh**
+
 *Embedded Linux / eMMC / SSH*
 *January 2026*
 
