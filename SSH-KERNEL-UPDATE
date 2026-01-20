@@ -1,0 +1,14 @@
+# KERNEL UPDATE OVER SSH
+
+**Full eMMC Clone Over  Ethernet (SSH)**
+Embedded Linux - Live System - No Flashing
+
+##Objective
+
+Create a 1:1  full clone of an embedded Linux device `(bootloader + kernel + rootfs + data)` using `Ethernet + SSH`, without removing storage or using flashing tools.
+
+##System Details
+-   Storage type: `eMMC`
+-   Main device: `/dev/mmcblk2`
+-   Boot Partitions: 
+    -  /dev/

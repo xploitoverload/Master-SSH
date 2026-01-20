@@ -1,0 +1,19 @@
+time syncronization from local-host to remote-host using ssh
+linux:
+on your local host:
+ssh <user>@<IP> "date -s \"$(date '+%Y-%m-%d %H:%M:%S')\""
+ssh <user>@<IP> "hwclock -w"
+
+for imx8:
+ssh root@IMX_IP "date -s \"$(date '+%Y-%m-%d %H:%M:%S')\""
+ssh root@IMX_IP "hwclock -w"
+
+
+windows:
+
+using ps
+
+ssh root@IMX_IP "date -s '$(Get-Date -Format "yyyy-MM-dd HH:mm:ss")'"
+
+TL;DR
+Here I used command execution over ssh as we can execute command without interactive shell.
