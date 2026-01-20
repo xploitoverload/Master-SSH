@@ -3,8 +3,7 @@ SSH
 ---
 
 connecting ssh
-
-==========================
+---
 
 ssh ip
 enter user
