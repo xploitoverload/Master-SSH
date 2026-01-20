@@ -18,8 +18,7 @@ enter pass(if)
 ssh user:pass@ip
 ```
 ---
-
-##using hosts  
+using hosts  
 ---
 l'me clear that hosts and hostname are different in their own way, so if u dont know google it or man ssh
 
