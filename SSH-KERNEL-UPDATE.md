@@ -19,11 +19,11 @@ Target Hardware:
 ├─ SSH access (preferably root)
 └─ Hopefully stable power
 
-Main Device: /dev/mmcblk2 (~7.3G)
-├─ /dev/mmcblk2p1 (boot, ~83M)
-├─ /dev/mmcblk2p2 (rootfs, ~6.5G)
-├─ /dev/mmcblk2boot0 (bootloader, 4M)
-└─ /dev/mmcblk2boot1 (bootloader backup, 4M)
+Main Device: /dev/mmcblk2
+├─ /dev/mmcblk2p1 (boot)
+├─ /dev/mmcblk2p2 (rootfs)
+├─ /dev/mmcblk2boot0 (bootloader)
+└─ /dev/mmcblk2boot1 (bootloader backup)
 ```
 
 **The Rules:**
@@ -1208,6 +1208,4 @@ ssh root@DEVICE "lsblk && fdisk -l /dev/mmcblk2"
 ssh root@DEVICE "reboot"
 ```
 
-Done.
-
-**
+**Done**
