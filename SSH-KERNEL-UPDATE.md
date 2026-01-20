@@ -1208,4 +1208,4 @@ ssh root@DEVICE "lsblk && fdisk -l /dev/mmcblk2"
 ssh root@DEVICE "reboot"
 ```
 
-**Done**
+**If you are here then it is Done**
